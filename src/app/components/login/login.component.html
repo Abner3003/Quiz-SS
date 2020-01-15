@@ -1,1 +1,28 @@
-<p>login works!</p>
+<div class="login-container">
+  <mat-card class="mat-elevation-z12">
+    <form [formGroup]="formLogin">
+      <mat-card-content>
+        <div>
+          <mat-form-field>
+            <mat-label>E-mail</mat-label>
+            <input matInput placeholder="E-mail" type="email" formControlName="EMAIL">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field >
+            <mat-label i18n>Senha</mat-label>
+            <input matInput [type]="mostrarSenha ? 'text' : 'password'" formControlName="SENHA" />
+            <mat-icon matSuffix (click)="mostrar = !mostrarSenha">{{mostrarSenha ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+        </div>
+
+
+        <mat-card-actions>
+          <div>
+            <button mat-raised-button (click)="login()" color="primary" class="buttonForm">LOGIN</button>
+          </div>
+        </mat-card-actions>
+      </mat-card-content>
+    </form>
+  </mat-card>
+</div>

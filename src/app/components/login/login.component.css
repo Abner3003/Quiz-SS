@@ -1,0 +1,37 @@
+.login-container {
+  height: 600px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: red; */
+}
+
+mat-card {
+  height: 450px;
+  width: 350px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: black; */
+}
+
+mat-form-field {
+  width: 300px;
+  height: 100%;
+  max-width: 100%;
+  /* background: green; */
+}
+
+mat-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: pink; */
+}
+
+.buttonForm {
+  width: 300px;
+}
